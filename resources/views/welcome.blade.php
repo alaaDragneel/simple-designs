@@ -11,60 +11,43 @@
         {{-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> --}}
 
         <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/all.css">
         <link rel="stylesheet" href="/css/app.css">
 
     </head>
 
     <body>
+        {{-- First Css Approache --}}
+        <div class="card">
+            {{-- Left --}}
+            <div class="card-left">
+                <a href="#" class="card-skill-button">PHP</a>
 
-        <header class="section">
-            <div class="container">
-                <div class="header-top">
-                    <h1>MixCode</h1>
+                <img src="/images/image.png" alt="PHP" title="PHP">
 
-                    <a href="#">Sign In</a>
-                </div>
-
-                <nav>
-                    <a href="#">Catalog</a>
-                    <a href="#">Series</a>
-                    <a href="#">Podcast</a>
-                    <a href="#">Discussions</a>
-                </nav>
-                
+                <span class="card-difficulty">Intermediate Difficulty</span>
             </div>
-        </header>
-            
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="box">Some Text</div>
-                    </div>
 
-                    <div class="col">
-                        <div class="box">Some Text</div>
-                    </div>
+            {{-- Right --}}
+            <div class="card-right">
+               <h3 class="card-title"><a href="#">Training On Css</a></h3> 
 
-                    <div class="col">
-                        <div class="box">Some Text</div>
-                    </div>
+               <p class="card-description">
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, velit quod aperiam cupiditate maxime, aut labore, esse nostrum tempora, in fugit repellat.
+               </p>
 
-                    <div class="col">
-                        <div class="box">Some Text</div>
+               <div class="card-meta">
+                    <div>
+                        <i class="fas fa-book"></i>
+                        5 Lessons
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="box">Some Text</div>
+                    
+                    <div>
+                        <i class="far fa-clock"></i>
+                        53:10 min
                     </div>
-
-                    <div class="col">
-                        <div class="box">Some Text</div>
-                    </div>
-                </div>
+               </div>
             </div>
         </div>
-
     </body>
 </html>
