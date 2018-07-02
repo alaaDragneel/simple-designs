@@ -11,28 +11,14 @@ a:hover {
 	text-decoration: underline;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
 header {
 	background-image: linear-gradient(to right, #a25b5b, #692e4c);
-	padding: 1.5em 2em;
 }
 
 header h1 {
 	margin-top: 0;
 	font-size: 1.6em;
 	color: inherit;
-}
-
-.header-top {
-	display: flex;
-	justify-content: space-between;
-	font-weight: bold;
-	color: white;
-	padding-bottom: 50px;
 }
 
 nav {
@@ -49,4 +35,43 @@ nav > a {
 
 nav > a:hover {
 	color: rgba(255, 255, 255, 1);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	color: white;
+	padding-bottom: 50px;
+}
+
+.section {
+	padding: 30px;
+}
+
+.flex, .row {
+	display: flex;
+}
+
+.row {
+	margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+	flex: 1;
+	padding: 10px;
+}
+
+.box {
+	background-color: #e3e3e3;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

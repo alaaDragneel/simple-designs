@@ -17,7 +17,7 @@
 
     <body>
 
-        <header>
+        <header class="section">
             <div class="container">
                 <div class="header-top">
                     <h1>MixCode</h1>
@@ -33,7 +33,38 @@
                 </nav>
                 
             </div>
-        </header> 
+        </header>
+            
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+
+                    <div class="col">
+                        <div class="box">Some Text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
