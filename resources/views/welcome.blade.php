@@ -10,45 +10,36 @@
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> --}}
 
-        <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/all.css">
-        <link rel="stylesheet" href="/css/tailwind.min.css">
         <link rel="stylesheet" href="/css/app.css">
 
     </head>
 
-    <body class="flex justify-center items-center">
-        {{-- Second Utilities Approache --}}
-        <div class="card flex rounded">
-            {{-- Left --}}
-            <div class="card-left flex flex-col justify-between rounded p-6 items-center text-center text-white">
-                <a href="#" class="card-skill-button no-underline text-sm rounded-full py-1 px-6 text-inherit">PHP</a>
+    <body class="font-sans p-6">
 
-                <img src="/images/image.png" alt="PHP" title="PHP">
+        <div class="container mx-auto">
 
-                <span class="card-difficulty text-xs">Intermediate Difficulty</span>
+            <div class="flex">
+                @php
+                    $plans = [
+                        ['name' => 'Monthly', 'price' => '15', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'],
+                        ['name' => 'Yearly', 'price' => '30', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'],
+                        ['name' => 'Forever', 'price' => '60', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'],
+                        ['name' => 'Teams', 'price' => '50', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'],
+                    ];
+                @endphp
+
+                @include('plan', $plans[0])
+
+                @include('plan', $plans[1])
+
+                @include('plan', $plans[2])
+
+                @include('plan', $plans[3])
+
             </div>
-
-            {{-- Right --}}
-            <div class="card-right flex flex-col text-grey-darker p-6">
-               <h3 class="card-title text-black font-light text-3xl mb-3"><a href="#" class="no-underline text-inherit">Training On Css</a></h3> 
-
-               <p class="card-description flex-1">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, velit quod aperiam cupiditate maxime, aut labore, esse nostrum tempora, in fugit repellat.
-               </p>
-
-               <div class="card-meta flex text-sm">
-                    <div class="mr-4">
-                        <i class="fas fa-book"></i>
-                        5 Lessons
-                    </div>
-                    
-                    <div>
-                        <i class="far fa-clock"></i>
-                        53:10 min
-                    </div>
-               </div>
-            </div>
+        
         </div>
+
     </body>
 </html>

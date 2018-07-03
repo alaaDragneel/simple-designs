@@ -943,7 +943,7 @@ module.exports = {
   */
 
   options: {
-    prefix: 'tw-',
+    prefix: '',
     important: false,
     separator: ':',
   },
